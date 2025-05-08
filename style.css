@@ -1,7 +1,13 @@
-*{
+h*{
   box-sizing: border-box;
 }
 
+:root {
+  --main-color: #c62828;
+  --secondary-color: #ffb74d;
+  --menu-color: #e4bd83;
+  --background-color: #1b1818;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -23,7 +29,7 @@ nav ul {
   gap: 10rem;
   display: flex;
   list-style: none;
-  background-color: #c62828;
+  background-color: var(--main-color);
   border-bottom: 2px solid black;
   z-index: 10;
 }
@@ -35,7 +41,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #ffb74d;
+  color: var(--secondary-color);
   transition: color 0.3s ease;
 }
 
@@ -82,7 +88,7 @@ nav ul li a:hover {
 
 .cta-button {
   display: inline-block;
-  background-color: #c62828;
+  background-color: var(--main-color);
   color: white;
   padding: 12px 24px;
   font-size: 1.2rem;
@@ -95,14 +101,14 @@ nav ul li a:hover {
 }
 
 .cta-button:hover {
-  background-color: #ffb74d;
+  background-color: var(--secondary-color);
   color: black;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 #menu {
-  background-color: #e4bd83;
+  background-color: var(--menu-color);
   padding-bottom: 1rem;
 }
 
@@ -134,17 +140,17 @@ nav ul li a:hover {
   border-radius: 10px;
 }
 #about {
-  background-color: rgb(27, 24, 24);
+  background-color: #1b1818;
   margin: 0;
   padding: 1rem;
   color: white;
   border-top: 1px solid #fff;
 }
 #about h2 {
-  color: #c62828
+  color: var(--main-color)
 }
 #contact {
-  background-color: rgb(27, 24, 24);
+  background-color: var(--background-color);
   margin: 0;
   padding: 1rem;
   padding-bottom: 0.1rem;
@@ -152,15 +158,15 @@ nav ul li a:hover {
   border-top: 1px solid #fff;
 }
 #contact h2 {
-  color: #c62828
+  color: var(--main-color)
 }
 #contact a {
   text-decoration: none;
-  color: #c62828;
+  color: var(--main-color);
 }
 footer {
   display: flex;
-  background-color: rgb(27, 24, 24);
+  background-color: var(--background-color);
   margin: 0;
   padding: 0;
   color: white;
